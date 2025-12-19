@@ -3,9 +3,16 @@ import { testimonial } from "@/lib/mock-data";
 
 export function TestimonialSection() {
   return (
-    <section className="relative flex flex-col items-start gap-2.5 p-6 lg:p-20 w-full bg-gradient-to-br from-brand-dark via-gray-800 to-brand-dark-alt mb-20 lg:mb-[120px]">
-      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-gray-900/50 via-brand-dark/80 to-gray-900/50" />
-      <div className="flex items-center gap-2.5 px-6 md:px-12 lg:px-[328px] py-12 lg:py-20 w-full rounded-[0px_30px_0px_30px] border border-solid border-[#979797cc]">
+    <section className="relative flex flex-col items-start gap-2.5 p-6 lg:p-20 w-full mb-20 lg:mb-[120px] overflow-hidden">
+     
+      <Image
+        src="peerlaw3.jpg"
+        alt="Testimonial Background"
+        fill
+        className="object-cover"
+      />
+      <div className="absolute inset-0 bg-[#13192799]" />
+      <div className="relative z-10 flex items-center gap-2.5 px-6 md:px-12 lg:px-[328px] py-12 lg:py-20 w-full rounded-[0px_30px_0px_30px] border border-solid border-[#979797cc]">
         <div className="flex flex-col w-full max-w-[623px] mx-auto items-center gap-12 lg:gap-20">
           <div className="flex flex-col items-center gap-10 w-full">
             <div className="flex flex-col w-full max-w-[270px] items-center gap-10">
@@ -19,13 +26,13 @@ export function TestimonialSection() {
                 </h2>
               </div>
 
-              <Image src="/line-45.svg" alt="Divider" width={2} height={38} />
+              <Image src="/line 45.png" alt="Divider" width={2} height={38} />
             </div>
 
             <div className="flex flex-col items-center gap-10 w-full">
               <div className="relative w-[80px] lg:w-[120px] h-[80px] lg:h-[120px]">
                 <Image
-                  src="/sidekickicons-quotation-mark.svg"
+                  src="/Vector-quotation.png"
                   alt="Quotation mark"
                   fill
                   className="object-contain"
@@ -62,9 +69,9 @@ export function TestimonialSection() {
           </div>
 
           <div className="inline-flex items-center gap-[5px]">
-            <Image src="/line-47.svg" alt="" width={37} height={8} />
-            <Image src="/line-48.svg" alt="" width={21} height={8} />
-            <Image src="/line-49.svg" alt="" width={11} height={8} />
+            <Image src="/line 47.png" alt="" width={37} height={8} />
+            <Image src="/line 48.png" alt="" width={21} height={8} />
+            <Image src="/line 49.png" alt="" width={11} height={8} />
           </div>
         </div>
       </div>

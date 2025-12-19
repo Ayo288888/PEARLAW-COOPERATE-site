@@ -12,7 +12,7 @@ export function PracticeAreasSection() {
             <Badge className="bg-[#a45c2a33] hover:bg-[#a45c2a33] rounded-[30px] px-7 py-3 gap-1">
               <div className="relative w-3.5 h-3.5">
                 <Image
-                  src="/simple-line-icons-check.svg"
+                  src="/simple-line-icon.png"
                   alt="Check"
                   fill
                   className="object-contain"
@@ -40,7 +40,7 @@ export function PracticeAreasSection() {
           </div>
 
           <Image
-            src="/line-2.svg"
+            src="/line 2.png"
             alt="Divider"
             width={1281}
             height={1}
@@ -55,7 +55,7 @@ export function PracticeAreasSection() {
             </span>
             <div className="relative w-3.5 h-3.5">
               <Image
-                src="/prime-arrow-right.svg"
+                src="/arrow-right.png"
                 alt="Arrow"
                 fill
                 className="object-contain"
@@ -86,7 +86,7 @@ export function PracticeAreasSection() {
             </h2>
           </div>
 
-          <Image src="/line-45.svg" alt="Divider" width={2} height={38} />
+          <Image src="/line 45.png" alt="Divider" width={2} height={38} />
         </div>
 
         <div className="flex flex-col items-center justify-center gap-[60px] w-full">
@@ -123,9 +123,10 @@ export function PracticeAreasSection() {
                   </span>
                   <div className="relative w-3.5 h-3.5">
                     <Image
-                      src="/prime-arrow-right.svg"
+                      src="/arrow-right(orange).png"
                       alt="Arrow"
                       fill
+  
                       className="object-contain"
                     />
                   </div>

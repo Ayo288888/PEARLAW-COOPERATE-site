@@ -5,10 +5,21 @@ import { ctaBanner } from "@/lib/mock-data";
 
 export function CTABannerSection() {
   return (
-    <section className="relative w-full mb-20 lg:mb-[120px]">
-      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-brand-dark-alt via-brand-dark to-gray-900" />
-      <div className="inline-flex flex-col items-start gap-2.5 px-6 lg:px-20 py-[60px] w-full opacity-95">
-        <div className="flex flex-col w-full max-w-[1280px] mx-auto items-start gap-2.5 px-6 md:px-12 lg:px-[285px] py-12 lg:py-20 rounded-[0px_30px_0px_30px] overflow-hidden border border-solid border-[#979797cc]">
+    <section className="relative w-full mb-20 lg:mb-[120px] py-[60px]">
+    
+      <Image
+        src="/peerlaw4.jpg"
+        alt="CTA Banner Background"
+        fill
+        className="object-cover"
+        priority 
+      />
+
+      <div className="absolute inset-0 bg-[#131927B2]  blur-md" />
+
+      
+      <div className="relative z-10 flex justify-center px-6 lg:px-20 w-full">
+        <div className="flex flex-col w-full max-w-[1280px] items-start gap-2.5 px-6 md:px-12 lg:px-[285px] py-12 lg:py-20 rounded-[0px_30px_0px_30px] overflow-hidden border border-solid border-[#979797cc] ">
           <div className="flex flex-col items-start gap-[60px] w-full">
             <div className="flex flex-col items-center gap-[18px] w-full">
               <div className="flex flex-col items-center justify-center gap-7 w-full">
@@ -25,7 +36,7 @@ export function CTABannerSection() {
                     <div className="inline-flex items-center gap-1">
                       <div className="relative w-5 h-5">
                         <Image
-                          src="/oui-email.svg"
+                          src="/email-icon.png"
                           alt="Email"
                           fill
                           className="object-contain"
@@ -44,7 +55,7 @@ export function CTABannerSection() {
                       <div className="inline-flex items-center gap-2">
                         <div className="relative w-5 h-5">
                           <Image
-                            src="/cuida-clock-outline.svg"
+                            src="/clock-icon.png"
                             alt="Clock"
                             fill
                             className="object-contain"
@@ -64,7 +75,7 @@ export function CTABannerSection() {
                 </div>
               </div>
 
-              <Image src="/line-45.svg" alt="Divider" width={2} height={38} />
+              <Image src="/line 45.png" alt="Divider" width={2} height={38} />
             </div>
 
             <div className="flex flex-col items-start gap-10 w-full">

@@ -19,7 +19,7 @@ export function Footer() {
                 <Link href="/" className="flex items-center gap-[13px]">
                   <div className="relative w-[50px] h-[50px]">
                     <Image
-                      src="/pearlaw-corporate-logo-removebg-preview-1-1.png"
+                      src={companyInfo.logo}
                       alt={`${companyInfo.name} Logo`}
                       fill
                       className="object-cover"
@@ -106,7 +106,7 @@ export function Footer() {
 
             <div className="flex flex-col items-start gap-[18px]">
               <h3 className="font-montserrat font-bold text-white text-lg leading-6 whitespace-nowrap">
-                Quick Link
+                Quick Links
               </h3>
 
               <nav className="flex flex-col items-start gap-[18px]">

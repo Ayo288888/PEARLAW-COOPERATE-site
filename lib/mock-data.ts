@@ -14,18 +14,17 @@ import {
 
 export const navigationItems: NavigationItem[] = [
   { label: 'Home', href: '/' },
-  { label: 'Services', href: '/services' },
-  { label: 'Team', href: '/team' },
+  { label: 'Experience plc', href: '/experience' },
+  { label: 'Expertise', href: '/services' },
+  { label: 'Meet the team', href: '/team' },
   { label: 'Blog', href: '/blog' },
   { label: 'About', href: '/about' },
-  { label: 'Retainership', href: '/retainership' },
 ];
 
 export const heroContent: HeroContent = {
   welcomeText: 'WELCOME TO',
   mainHeading: 'PEARLAW CORPORATE',
-  subheading:
-    'We provide expert legal solutions for businesses and individuals. Experience. Trust. Results.',
+  subheading: 'We provide expert legal solutions for businesses and individuals. Experience. Trust. Results.',
   ctaText: 'BOOK NOW',
 };
 
@@ -39,8 +38,8 @@ export const statistics: Statistic[] = [
     label: 'Success Rate',
   },
   {
-    value: '10mlns',
-    label: 'Recovered Cost for Client',
+    value: '10M+',
+    label: 'Recovered Costs for Clients',
   },
   {
     value: '15+',
@@ -50,42 +49,42 @@ export const statistics: Statistic[] = [
 
 export const practiceAreas: PracticeArea[] = [
   {
-    icon: '/streamline-ultimate-corporate-social-media.svg',
+    icon: '/vector.png',
     title: 'CORPORATE & COMMERCIAL',
     description:
       'End-to-end corporate structuring, M&A transactions, commercial contracts and joint ventures tailored to your business objectives.',
     slug: 'corporate-commercial',
   },
   {
-    icon: '/octicon-law-24.svg',
+    icon: '/vector1.png',
     title: 'TECH LAW',
     description:
       'Navigate the digital landscape with expertise in data privacy, IP protection, software licensing, and technology transactions.',
     slug: 'tech-law',
   },
   {
-    icon: '/lucide-house.svg',
+    icon: '/vector2.png',
     title: 'REAL ESTATE LAW',
     description:
       'Complete real estate solutions covering property transactions, due diligence, leasing, and title verification.',
     slug: 'real-estate-law',
   },
   {
-    icon: '/lucide-rocket.svg',
+    icon: '/vector3.png',
     title: 'STARTUPS & MSME LAW',
     description:
       "Comprehensive legal support for startups and MSME's including incorporation, funding rounds, term sheets, and growth strategies.",
     slug: 'startups-msme-law',
   },
   {
-    icon: '/heroicons-document-check.svg',
+    icon: '/vector4.png',
     title: 'COMPANY GOVERNANCE',
     description:
-      'Ensure compliance with corporate governance standards, board processes, statutory fillings and regulatory.',
+      'Ensure compliance with corporate governance standards, board processes, statutory filings and regulatory.',
     slug: 'company-governance',
   },
   {
-    icon: '/line-md-security.svg',
+    icon: '/vector5.png',
     title: 'REGULATORY COMPLIANCE',
     description:
       'Stay ahead of regulatory changes with our proactive compliance advisory across multiple sectors and jurisdictions.',
@@ -96,37 +95,37 @@ export const practiceAreas: PracticeArea[] = [
 export const teamMembers: TeamMember[] = [
   {
     id: '1',
-    image: '/image-2.png',
+    image: '/team1.png',
     name: 'ADEBAYO JOHNSON',
     role: 'SENIOR ASSOCIATE',
   },
   {
     id: '2',
-    image: '/image-3.png',
+    image: '/team2.png',
     name: 'CHIOMA OKONKWO',
     role: 'ASSOCIATE',
   },
   {
     id: '3',
-    image: '/image-7.png',
+    image: '/team3.png',
     name: 'TUNDE ADELEKE',
     role: 'LEGAL CONSULTANT',
   },
   {
     id: '4',
-    image: '/image-8.png',
+    image: '/team4.png',
     name: 'BLESSING NNAMDI',
     role: 'ASSOCIATE',
   },
   {
     id: '5',
-    image: '/image-6.png',
+    image: '/team1.png',
     name: 'IBRAHIM HASSAN',
     role: 'LEGAL ADVISOR',
   },
   {
     id: '6',
-    image: '/image-9.png',
+    image: '/team2.png',
     name: 'GRACE EZE',
     role: 'JUNIOR ASSOCIATE',
   },
@@ -168,24 +167,24 @@ export const testimonial: Testimonial = {
     "Pearlaw's expertise in tech law helped us navigate complex regulatory requirements as we scaled. Their practical advice was invaluable. The firm handled my case with exceptional professionalism and clarity. I felt supported at every stage.",
   name: 'Chidi Okonkwo',
   title: 'CEO, TechVenture Nigeria',
-  image: '/ellipse-10.png',
+  image: '/ceo.jpg',
 };
 
 export const contactInfo: ContactInfo[] = [
   {
-    icon: '/ri-whatsapp-line.svg',
+    icon: '/whatsapp-icon.png',
     text: '+234 806 430 5645',
     type: 'whatsapp',
     link: 'https://wa.me/2348064305645',
   },
   {
-    icon: '/cuida-phone-outline.svg',
+    icon: '/phone-icon.png',
     text: '+234 813 614 1666',
     type: 'phone',
     link: 'tel:+2348136141666',
   },
   {
-    icon: '/ic-outline-email.svg',
+    icon: '/email-icon.png',
     text: 'contact@pearlawcorporate.com',
     type: 'email',
     link: 'mailto:contact@pearlawcorporate.com',
@@ -195,19 +194,19 @@ export const contactInfo: ContactInfo[] = [
 export const socialLinks: SocialLink[] = [
   {
     platform: 'Facebook',
-    icon: '/iconoir-facebook.svg',
+    icon: '/facebook-icon.png',
     url: 'https://facebook.com',
     ariaLabel: 'Visit our Facebook page',
   },
   {
     platform: 'Instagram',
-    icon: '/fe-instagram.svg',
+    icon: '/insta-icon.png',
     url: 'https://instagram.com',
     ariaLabel: 'Visit our Instagram profile',
   },
   {
     platform: 'TikTok',
-    icon: '/streamline-plump-tiktok.svg',
+    icon: '/tiktok-icon.png',
     url: 'https://tiktok.com',
     ariaLabel: 'Visit our TikTok profile',
   },
@@ -225,6 +224,7 @@ export const practiceAreaLinks: string[] = [
 export const quickLinks: QuickLink[] = [
   { label: 'About Us', href: '/about' },
   { label: 'Services', href: '/services' },
+  { label: 'Retainership', href: '/retainership' },
   { label: 'Careers', href: '/careers' },
   { label: 'Blog', href: '/blog' },
   { label: 'Privacy Policy', href: '/privacy' },
@@ -235,13 +235,13 @@ export const ctaBanner: CallToActionBanner = {
   heading: 'ARE YOU LOOKING FOR SOMEONE TO HELP?',
   subheading: 'Let us help you! Call Now : (234)813 614 1666',
   phone: '+234 813 614 1666',
-  email: 'Contact@pearlaw.com',
+  email: 'contact@pearlawcorporate.com',
   hours: 'Mon - Fri: 9:00AM - 6:00PM',
 };
 
 export const companyInfo = {
   name: 'Pearlaw Corporate',
-  logo: '/pearlaw-corporate-logo-removebg-preview-1.png',
-  tagline: 'Protecting your right with clarity, confidence, and experience.',
+  logo: '/logo-white.png',
+  tagline: 'Protecting your rights with clarity, confidence, and experience.',
   copyright: '2025 Pearlaw Corporate. All rights reserved.',
 };

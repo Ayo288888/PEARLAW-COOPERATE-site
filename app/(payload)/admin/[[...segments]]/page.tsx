@@ -1,4 +1,24 @@
-import { AdminView } from "@payloadcms/next/views"
-import config from "@/payload.config"
+/* c:\Users\AYO\Documents\GitHub\PEARLAW-COOPERATE-\app\(payload)\admin\[[...segments]]\page.tsx */
+import type { Metadata } from 'next'
 
-export default AdminView(config)
+import config from '@/payload.config'
+import { RootPage, generatePageMetadata } from '@payloadcms/next/views'
+// @ts-ignore
+import { importMap } from '../importMap'
+
+type Args = {
+  params: Promise<{
+    segments: string[]
+  }>
+  searchParams: Promise<{
+    [key: string]: string | string[]
+  }>
+}
+
+export const generateMetadata = ({ params, searchParams }: Args): Promise<Metadata> =>
+  generatePageMetadata({ config, params, searchParams })
+
+const Page = ({ params, searchParams }: Args) =>
+  RootPage({ config, params, searchParams, importMap })
+
+export default Page

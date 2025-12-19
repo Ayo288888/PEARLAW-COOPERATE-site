@@ -16,8 +16,25 @@ import Image from "next/image";
 export function ContactFormSection() {
   return (
     <div className="relative -mt-[440px] lg:-mt-[340px] w-full flex justify-center px-6 lg:px-4 pb-[140px]">
-      <Card className="w-full max-w-[868px] rounded-lg overflow-hidden bg-gradient-to-b from-white/88 to-white/88 bg-blend-overlay border-0 shadow-2xl">
-        <CardContent className="px-6 md:px-12 lg:px-20 py-[60px]">
+      {/* Updated Card to be 'relative' for the image positioning */}
+      <Card className="relative w-full max-w-[868px] rounded-lg overflow-hidden border-0 shadow-2xl">
+        
+        {/* 1. BACKGROUND IMAGE (Inside the Card) */}
+        {/* Update '/contact-bg.jpg' to your actual image path */}
+        <Image
+          src="/peerlaw5.jpg"
+          alt="Contact Form Background"
+          fill
+          className="object-cover"
+        />
+
+        {/* 2. OVERLAY (Inside the Card) */}
+        {/* Uses #FFFFFF with E0 opacity (approx 88%) */}
+        <div className="absolute inset-0 bg-[#FFFFFFE0]" />
+
+        {/* 3. CONTENT */}
+        {/* Added 'relative z-10' to ensure inputs are clickable above the image */}
+        <CardContent className="relative z-10 px-6 md:px-12 lg:px-20 py-[60px]">
           <div className="flex flex-col items-center gap-10 w-full">
             <div className="flex flex-col w-full max-w-[585px] items-center gap-[18px]">
               <h2 className="font-montserrat font-semibold text-brand-text text-2xl lg:text-[28px] text-center tracking-[0] leading-[34px]">
@@ -85,7 +102,7 @@ export function ContactFormSection() {
                 </span>
                 <div className="relative w-5 h-5">
                   <Image
-                    src="/lucide-send.svg"
+                    src="/send-icon.png"
                     alt="Send"
                     fill
                     className="object-contain"

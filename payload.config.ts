@@ -1,4 +1,4 @@
-import { buildConfig } from "payload/config"
+import { buildConfig } from "payload"
 import { postgresAdapter } from "@payloadcms/db-postgres"
 import { lexicalEditor } from "@payloadcms/richtext-lexical"
 import path from "path"
@@ -12,7 +12,13 @@ export default buildConfig({
     user: "users",
     meta: {
       titleSuffix: "- Legal Blog CMS",
-      favicon: "/favicon.ico",
+      icons: [
+        {
+          rel: "icon",
+          type: "image/x-icon",
+          url: "/favicon.ico",
+        },
+      ],
     },
   },
   collections: [
@@ -129,7 +135,9 @@ export default buildConfig({
   },
   db: postgresAdapter({
     pool: {
-      connectionString: process.env.DATABASE_URL,
+      connectionString: process.env.DATABASE_URL || '',
+      max: 10, // max number of clients in the pool
+      idleTimeoutMillis: 30000, // close idle clients after 30 seconds
     },
   }),
 })

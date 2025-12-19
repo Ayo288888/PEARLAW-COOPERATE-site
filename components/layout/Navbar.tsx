@@ -15,7 +15,7 @@ export function Navbar() {
             <Link href="/" className="flex items-center gap-[13px] flex-shrink-0">
               <div className="relative w-[50px] h-[50px]">
                 <Image
-                  src={companyInfo.logo}
+                  src="/logo.png"
                   alt={`${companyInfo.name} Logo`}
                   fill
                   className="object-cover"
@@ -40,8 +40,10 @@ export function Navbar() {
             </nav>
 
             <div className="flex items-center">
-              <Button className="bg-brand-orange hover:bg-brand-orange-dark text-neutral-100 px-4 lg:px-[18px] py-3 lg:py-[13px] h-auto rounded font-montserrat font-medium text-xs tracking-[0] leading-[14px]">
-                Get in Touch
+              <Button asChild className="bg-brand-orange hover:bg-brand-orange-dark text-neutral-100 px-4 lg:px-[18px] py-3 lg:py-[13px] h-auto rounded font-montserrat font-medium text-xs tracking-[0] leading-[14px]">
+                <Link href="/contact">
+                  Get in Touch
+                </Link>
               </Button>
             </div>
           </div>

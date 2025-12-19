@@ -5,10 +5,19 @@ import { teamMembers } from "@/lib/mock-data";
 
 export function TeamSection() {
   return (
-    <section className="relative w-full min-h-[778px] mb-20">
-      <div className="absolute top-0 left-0 w-full h-[652px] bg-gradient-to-br from-brand-dark via-brand-dark/90 to-gray-900" />
+    <section className="relative w-full min-h-[778px] mb-20">     
+      <div className="absolute top-0 left-0 w-full h-[652px]">
+        <Image
+          src="/peerlaw2.png"
+          alt="Team Background"
+          fill
+          className="object-cover"
+        />
 
-      <div className="flex flex-col w-full max-w-[1358px] items-center gap-20 absolute top-20 left-1/2 -translate-x-1/2 px-6 lg:px-4">
+        
+        <div className="absolute inset-0 bg-[#13192799]" />
+      </div>
+      <div className="z-10 flex flex-col w-full max-w-[1358px] items-center gap-20 absolute top-20 left-1/2 -translate-x-1/2 px-6 lg:px-4">
         <div className="flex flex-col items-center gap-7">
           <h2 className="font-inter font-medium text-white text-2xl lg:text-[32px] text-center tracking-[0] leading-9 whitespace-nowrap">
             Our Legal Team
@@ -21,7 +30,7 @@ export function TeamSection() {
               </span>
               <div className="relative w-6 h-6">
                 <Image
-                  src="/prime-arrow-right.svg"
+                  src="/arrow-right(orange).png"
                   alt="Arrow"
                   fill
                   className="object-contain"
@@ -29,7 +38,7 @@ export function TeamSection() {
               </div>
             </button>
 
-            <Image src="/line-45.svg" alt="Divider" width={2} height={38} />
+            <Image src="/line 45.png" alt="Divider" width={2} height={38} />
           </div>
         </div>
 
@@ -39,11 +48,11 @@ export function TeamSection() {
               {teamMembers.map((member) => (
                 <Card
                   key={member.id}
-                  className="w-[300px] lg:w-[377px] flex-shrink-0 bg-[#f9f9f9] rounded-lg overflow-hidden border border-solid border-[#f5f5f54c]"
+                  className="w-[300px] lg:w-[377px] flex-shrink-0 bg-[#F5F5F54D] rounded-lg overflow-hidden border border-solid border-[#f5f5f54c]"
                 >
                   <CardContent className="p-0">
                     <div className="flex flex-col items-center gap-5">
-                      <div className="relative w-full h-[260px] lg:h-[342px] rounded-[8px_8px_0px_0px]">
+                      <div className="relative w-full h-[260px] lg:h-[342px] rounded-[1px_1px_0px_0px]">
                         <Image
                           src={member.image}
                           alt={member.name}

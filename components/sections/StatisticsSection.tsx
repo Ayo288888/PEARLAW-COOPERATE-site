@@ -5,9 +5,17 @@ import { statistics } from "@/lib/mock-data";
 export function StatisticsSection() {
   return (
     <section className="relative w-full min-h-[1169px]">
-      <div className="absolute top-0 left-0 w-full h-[1169px] bg-gradient-to-br from-brand-dark via-brand-dark-alt/95 to-brand-dark" />
+      <Image
+        src="/peerlaw1.jpg"
+        alt="Statistics Background"
+        fill
+        className="object-cover"
+      />
 
-      <div className="absolute top-20 left-1/2 -translate-x-1/2 w-full max-w-[1280px] px-6 lg:px-4">
+      <div className="absolute inset-0 bg-[#000000C7]" />
+
+
+      <div className="z-10 absolute top-20 left-1/2 -translate-x-1/2 w-full max-w-[1280px] px-6 lg:px-4">
         <Card className="w-full rounded-[0px_30px_0px_30px] overflow-hidden border border-solid border-[#979797cc] bg-transparent">
           <CardContent className="p-0">
             <div className="flex flex-col items-start gap-20 px-6 md:px-12 lg:px-20 py-[60px]">
@@ -23,16 +31,21 @@ export function StatisticsSection() {
                     </h2>
                   </div>
 
-                  <Image src="/line-45.svg" alt="Divider" width={2} height={38} />
+                  <Image
+                    src="/line 45.png"
+                    alt="Divider"
+                    width={2}
+                    height={38}
+                  />
                 </div>
 
                 <div className="flex flex-col lg:flex-row items-start gap-8 lg:gap-[69px] w-full">
                   <p className="flex-1 font-inter font-normal text-white/80 text-lg lg:text-xl tracking-[0] leading-7">
                     Our firm is built on a foundation of trust, dedication, and
-                    exceptional service. For years, we have guided clients through
-                    complex legal matters with clarity and confidence. Every case
-                    we handle is approached with care, precision, and a deep
-                    commitment to achieving the best possible outcome.
+                    exceptional service. For years, we have guided clients
+                    through complex legal matters with clarity and confidence.
+                    Every case we handle is approached with care, precision, and
+                    a deep commitment to achieving the best possible outcome.
                   </p>
 
                   <p className="flex-1 font-inter font-normal text-white/80 text-lg lg:text-xl tracking-[0] leading-7">
