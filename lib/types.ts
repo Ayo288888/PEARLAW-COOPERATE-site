@@ -33,6 +33,8 @@ export interface BlogArticle {
   commentCount: number;
   excerpt?: string;
   content?: string;
+  readTime?: number;
+  category?: string;
 }
 
 export interface Testimonial {
