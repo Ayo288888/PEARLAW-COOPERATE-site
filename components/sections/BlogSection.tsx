@@ -3,6 +3,7 @@ import { Card, CardContent } from "../ui/card";
 import { Button } from "../ui/button";
 import { ArrowRightIcon } from "lucide-react";
 import { blogArticles } from "@/lib/mock-data";
+import Link from "next/link";
 
 export function BlogSection() {
   return (
@@ -72,12 +73,14 @@ export function BlogSection() {
         </div>
       </div>
 
-      <Button className="flex w-[179px] h-[50px] items-center justify-center px-2.5 py-[18px] bg-brand-orange rounded hover:bg-brand-orange-dark">
-        <span className="w-fit font-montserrat font-medium text-brand-light text-xs tracking-[0] leading-[14px] whitespace-nowrap">
-          Read the Blog
-        </span>
+      <Button asChild className="flex w-[179px] h-[50px] items-center justify-center px-2.5 py-[18px] bg-brand-orange rounded hover:bg-brand-orange-dark">
+        <Link href="/blog">
+          <span className="w-fit font-montserrat font-medium text-brand-light text-xs tracking-[0] leading-[14px] whitespace-nowrap">
+            Read the Blog
+          </span>
 
-        <ArrowRightIcon className="w-3.5 h-3.5" />
+          <ArrowRightIcon className="w-3.5 h-3.5" />
+        </Link>
       </Button>
     </section>
   );
