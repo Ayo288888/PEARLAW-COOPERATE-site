@@ -232,25 +232,25 @@ export default function TeamPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-8 w-full">
                 {[
                   {
-                    icon: "/vector1.png",
+                    icon: "/law-icona.png",
                     title: "PROFESSIONALISM",
                     description:
                       "Maintaining the highest standards of legal practice and ethical conduct in every case arises",
                   },
                   {
-                    icon: "/vector12.png",
+                    icon: "/law-iconl.png",
                     title: "INTEGRITY",
                     description:
                       "Building trust through transparency, honesty and unwavering commitment to our clients worldwide.",
                   },
                   {
-                    icon: "/vector13.png",
+                    icon: "/law-iconm.png",
                     title: "INNOVATION",
                     description:
                       "Embracing modern legal solutions and technology to deliver exceptional results to our clients.",
                   },
                   {
-                    icon: "/vector14.png",
+                    icon: "/law-iconn.png",
                     title: "CLIENT FOCUS",
                     description:
                       "Your success is our priority. We listen, understand, and deliver tailored legal solutions",

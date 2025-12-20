@@ -49,42 +49,42 @@ export const statistics: Statistic[] = [
 
 export const practiceAreas: PracticeArea[] = [
   {
-    icon: "/vector.png",
+    icon: "/law-icon.png",
     title: "CORPORATE & COMMERCIAL",
     description:
       "End-to-end corporate structuring, M&A transactions, commercial contracts and joint ventures tailored to your business objectives.",
     slug: "corporate-commercial",
   },
   {
-    icon: "/vector1.png",
+    icon: "/law-icona.png",
     title: "TECH LAW",
     description:
       "Navigate the digital landscape with expertise in data privacy, IP protection, software licensing, and technology transactions.",
     slug: "tech-law",
   },
   {
-    icon: "/vector2.png",
+    icon: "/law-iconb.png",
     title: "REAL ESTATE LAW",
     description:
       "Complete real estate solutions covering property transactions, due diligence, leasing, and title verification.",
     slug: "real-estate-law",
   },
   {
-    icon: "/vector3.png",
+    icon: "/law-iconc.png",
     title: "STARTUPS & MSME LAW",
     description:
       "Comprehensive legal support for startups and MSME's including incorporation, funding rounds, term sheets, and growth strategies.",
     slug: "startups-msme-law",
   },
   {
-    icon: "/vector4.png",
+    icon: "/law-icond.png",
     title: "COMPANY GOVERNANCE",
     description:
       "Ensure compliance with corporate governance standards, board processes, statutory filings and regulatory.",
     slug: "company-governance",
   },
   {
-    icon: "/vector5.png",
+    icon: "/law-icone.png",
     title: "REGULATORY COMPLIANCE",
     description:
       "Stay ahead of regulatory changes with our proactive compliance advisory across multiple sectors and jurisdictions.",

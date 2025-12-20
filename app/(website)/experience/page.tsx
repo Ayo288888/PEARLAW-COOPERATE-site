@@ -83,7 +83,7 @@ export default function ExperiencePage() {
               <div className="flex flex-col items-center gap-6 w-full">
                 <div className="w-12 h-12 relative flex items-center justify-center">
                   <Image
-                    src="/vector8.png"
+                    src="/law-iconh.png"
                     alt="Schedule"
                     width={48}
                     height={48}
@@ -105,7 +105,7 @@ export default function ExperiencePage() {
               <div className="flex flex-col items-center gap-6 w-full">
                 <div className="w-12 h-12 relative flex items-center justify-center">
                   <Image
-                    src="/vector9.png"
+                    src="/law-iconi.png"
                     alt="Search"
                     width={48}
                     height={48}
@@ -127,7 +127,7 @@ export default function ExperiencePage() {
               <div className="flex flex-col items-center gap-6 w-full">
                 <div className="w-12 h-12 relative flex items-center justify-center">
                   <Image
-                    src="/vector10.png"
+                    src="/law-iconj.png"
                     alt="Idea"
                     width={48}
                     height={48}
