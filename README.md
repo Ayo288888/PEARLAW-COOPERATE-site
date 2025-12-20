@@ -58,7 +58,7 @@ Before you begin, ensure you have the following installed:
 Payload CMS comes with a built-in admin panel to manage your content.
 
 1.  Navigate to [http://localhost:3000/admin](http://localhost:3000/admin).
-2.  On the first run, you will be prompted to create your first admin user.
+2.  you will be asked to sign in email: wisdomilori0@gmail.com  pass: 1234567890
 3.  Once logged in, you can manage:
     - **Posts:** Create, edit, and publish blog articles.
     - **Users:** Manage admin access.
