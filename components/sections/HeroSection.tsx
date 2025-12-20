@@ -1,6 +1,7 @@
 import { Button } from "../ui/button";
 import { heroContent } from "@/lib/mock-data";
 import Image from "next/image";
+import Link from "next/link";
 
 export function HeroSection() {
   return (
@@ -35,18 +36,20 @@ export function HeroSection() {
           </p>
         </div>
 
-        <Button className="bg-gradient-to-br from-brand-orange-gradient-start to-brand-orange-gradient-end hover:opacity-90 rounded px-7 py-3.5 gap-2">
-          <span className="font-montserrat font-semibold text-brand-light text-xs tracking-[0] leading-[14px]">
-            {heroContent.ctaText}
-          </span>
-          <div className="relative w-3.5 h-3.5">
-            <Image
-              src="/arrow-right.png"
-              alt="Arrow"
-              fill
-              className="object-contain"
-            />
-          </div>
+        <Button asChild className="bg-gradient-to-br from-brand-orange-gradient-start to-brand-orange-gradient-end hover:opacity-90 rounded px-7 py-3.5 gap-2">
+          <Link href="/retainership">
+            <span className="font-montserrat font-semibold text-brand-light text-xs tracking-[0] leading-[14px]">
+              {heroContent.ctaText}
+            </span>
+            <div className="relative w-3.5 h-3.5">
+              <Image
+                src="/arrow-right.png"
+                alt="Arrow"
+                fill
+                className="object-contain"
+              />
+            </div>
+          </Link>
         </Button>
       </div>
     </section>

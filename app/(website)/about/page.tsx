@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
@@ -222,11 +223,13 @@ export default function AboutPage() {
             </h2>
           </div>
 
-          <Button className="w-full max-w-[600px] h-[50px] bg-[#C84E26] hover:bg-[#C84E26]/90 rounded-[4px] flex items-center justify-center gap-[10px]">
-            <span className="font-montserrat font-medium text-[12px] leading-[14px] text-[#F1F2F6]">
-              Book Consultation
-            </span>
-            <ArrowRight className="w-[14px] h-[14px] text-[#F1F2F6]" />
+          <Button asChild className="w-full max-w-[600px] h-[50px] bg-[#C84E26] hover:bg-[#C84E26]/90 rounded-[4px] flex items-center justify-center gap-[10px]">
+            <Link href="/retainership">
+              <span className="font-montserrat font-medium text-[12px] leading-[14px] text-[#F1F2F6]">
+                Book Consultation
+              </span>
+              <ArrowRight className="w-[14px] h-[14px] text-[#F1F2F6]" />
+            </Link>
           </Button>
         </section>
       </main>

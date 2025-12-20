@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Card, CardContent } from "../ui/card";
+import Link from "next/link";
 import { ScrollArea, ScrollBar } from "../ui/scroll-area";
 import { teamMembers } from "@/lib/mock-data";
 
@@ -24,7 +25,7 @@ export function TeamSection() {
           </h2>
 
           <div className="flex flex-col items-center gap-6">
-            <button className="flex items-center gap-5 hover:gap-6 transition-all">
+            <Link href="/team" className="flex items-center gap-5 hover:gap-6 transition-all">
               <span className="font-montserrat font-semibold text-brand-orange text-base text-center tracking-[0] leading-5 whitespace-nowrap">
                 VIEW ALL PEOPLE
               </span>
@@ -36,7 +37,7 @@ export function TeamSection() {
                   className="object-contain"
                 />
               </div>
-            </button>
+            </Link>
 
             <Image src="/line 45.png" alt="Divider" width={2} height={38} />
           </div>

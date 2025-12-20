@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Badge } from "../ui/badge";
 import { Button } from "../ui/button";
 import { practiceAreas } from "@/lib/mock-data";
@@ -44,32 +45,37 @@ export function PracticeAreasSection() {
             alt="Divider"
             width={1281}
             height={1}
-            className="w-full"
+            className="w-full h-auto"
           />
         </div>
 
         <div className="inline-flex items-center justify-center gap-4 lg:gap-[18px] flex-wrap">
-          <Button className="bg-brand-orange hover:bg-brand-orange/90 rounded px-[18px] py-4">
-            <span className="font-montserrat font-medium text-brand-light text-sm tracking-[0] leading-[14px]">
-              Book Consultation
-            </span>
-            <div className="relative w-3.5 h-3.5">
-              <Image
-                src="/arrow-right.png"
-                alt="Arrow"
-                fill
-                className="object-contain"
-              />
-            </div>
+          <Button asChild className="bg-brand-orange hover:bg-brand-orange/90 rounded px-[18px] py-4">
+            <Link href="/retainership">
+              <span className="font-montserrat font-medium text-brand-light text-sm tracking-[0] leading-[14px]">
+                Book Consultation
+              </span>
+              <div className="relative w-3.5 h-3.5">
+                <Image
+                  src="/arrow-right.png"
+                  alt="Arrow"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </Link>
           </Button>
 
           <Button
+            asChild
             variant="outline"
             className="rounded border-[0.6px] border-solid border-[#f3f3f34c] bg-gradient-to-br from-white to-[#999999] hover:opacity-90 px-7 py-4"
           >
-            <span className="font-montserrat font-medium text-brand-text text-sm tracking-[0] leading-[14px]">
-              Explore Services
-            </span>
+            <Link href="/services">
+              <span className="font-montserrat font-medium text-brand-text text-sm tracking-[0] leading-[14px]">
+                Explore Services
+              </span>
+            </Link>
           </Button>
         </div>
       </div>

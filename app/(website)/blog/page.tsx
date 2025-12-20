@@ -2,7 +2,6 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import Image from "next/image";
 import Link from "next/link";
-import { blogArticles } from "@/lib/mock-data";
 import { Zap, Clock, MessageSquare, User } from "lucide-react";
 import { getPayload } from "payload";
 import config from "@payload-config";
@@ -40,28 +39,25 @@ export default async function BlogPage() {
       },
     },
     sort: "-publishedAt",
+    depth: 1,
   });
 
-  const formattedCmsPosts = posts.map((post) => ({
+  const formattedCmsPosts = posts
+    .filter((post: any) => post.slug) // Only show posts that have a slug
+    .map((post: any) => ({
     id: `cms-${post.id}`,
     slug: post.slug,
-    image: post.featuredImage,
+    image: typeof post.featuredImage === 'string' ? post.featuredImage : post.featuredImage?.url || "/peerlawhero.jpg",
     title: post.title,
     excerpt: post.excerpt,
     date: new Date(post.publishedAt), // Keep as Date object for sorting
-    author: post.author,
+    author: typeof post.author === 'string' ? post.author : post.author?.name || post.author?.email || "Pearlaw Team",
     commentCount: 0, // Placeholder as comments are not in CMS yet
     readTime: post.readTime,
   }));
 
-  const formattedMockPosts = blogArticles.map((post) => ({
-    ...post,
-    id: `mock-${post.id}`, // Ensure id is a string
-    date: new Date(post.date), // Convert date string to Date object
-  }));
-
   // Combine and sort all posts
-  const allPosts = [...formattedCmsPosts, ...formattedMockPosts]
+  const allPosts = [...formattedCmsPosts]
     .sort((a, b) => b.date.getTime() - a.date.getTime())
     .map(post => ({
         ...post,
@@ -73,7 +69,7 @@ export default async function BlogPage() {
         }),
     }));
 
-  // Use the first post as the "Sticky" post for the design
+  
   const stickyPost = allPosts[0];
   const otherPosts = allPosts.slice(1);
   const recentArticles = allPosts.slice(0, 3);
@@ -97,10 +93,10 @@ export default async function BlogPage() {
           </div>
 
           <div className="relative z-10 flex flex-col items-center gap-[17px] px-4">
-            <h1 className="font-montserrat font-bold text-[36px] leading-[40px] text-white text-center capitalize">
+            <h1 className="font-montserrat font-bold text-[28px] md:text-[36px] leading-tight md:leading-[40px] text-white text-center capitalize">
               Blog
             </h1>
-            <p className="font-montserrat font-bold text-[20px] leading-[24px] text-white/80 text-center uppercase">
+            <p className="font-montserrat font-bold text-[16px] md:text-[20px] leading-[20px] md:leading-[24px] text-white/80 text-center uppercase">
               Insights and Legal Perspectives
             </p>
           </div>
@@ -126,7 +122,7 @@ export default async function BlogPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#131927]/20 to-[#131927]/20" />
                   
                   {/* Sticky Badge */}
-                  <div className="absolute bottom-[73px] left-0 w-[217px] h-[73px] bg-[#F1F2F6] flex items-center justify-center rounded-tr-[4px]">
+                  <div className="absolute bottom-[20px] md:bottom-[73px] left-0 w-[160px] md:w-[217px] h-[50px] md:h-[73px] bg-[#F1F2F6] flex items-center justify-center rounded-tr-[4px]">
                     <div className="flex items-center gap-2">
                       <div className="relative w-5 h-5 flex items-center justify-center">
                          <Zap className="w-5 h-5 text-[#C84E26] fill-[#C84E26]" />
