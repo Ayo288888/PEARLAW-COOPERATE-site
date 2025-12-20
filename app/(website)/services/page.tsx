@@ -65,7 +65,7 @@ export default function ServicesPage() {
             <div className="flex flex-col items-center gap-6">
               <div className="w-12 h-12 relative flex items-center justify-center">
                 <Image
-                                      src={'/vector.png'}
+                                      src={'/law-icon.png'}
                                       alt="icon"
                                       fill
                                       className="object-contain"
@@ -88,7 +88,7 @@ export default function ServicesPage() {
             <div className="flex flex-col items-center gap-6">
               <div className="w-12 h-12 relative flex items-center justify-center">
                  <Image
-                    src={'/vector1.png'}
+                    src={'/law-icona.png'}
                     alt="icon"
                     fill
                     className="object-contain"
@@ -110,7 +110,7 @@ export default function ServicesPage() {
             <div className="flex flex-col items-center gap-6">
               <div className="w-12 h-12 relative flex items-center justify-center">
                <Image
-                    src={'/vector2.png'}
+                    src={'/law-iconb.png'}
                     alt="icon"
                     fill
                     className="object-contain"
@@ -131,7 +131,7 @@ export default function ServicesPage() {
             <div className="flex flex-col items-center gap-6">
               <div className="w-12 h-12 relative flex items-center justify-center">
                 <Image
-                    src={'/vector3.png'}
+                    src={'/law-iconc.png'}
                     alt="icon"
                     fill
                     className="object-contain"
@@ -153,7 +153,7 @@ export default function ServicesPage() {
             <div className="flex flex-col items-center gap-6">
               <div className="w-12 h-12 relative flex items-center justify-center">
                 <Image
-                    src={'/vector4.png'}
+                    src={'/law-icond.png'}
                     alt="icon"
                     fill
                     className="object-contain"
@@ -174,7 +174,7 @@ export default function ServicesPage() {
             <div className="flex flex-col items-center gap-6">
               <div className="w-12 h-12 relative flex items-center justify-center">
                 <Image
-                    src={'/vector5.png'}
+                    src={'/law-icone.png'}
                     alt="icon"
                     fill
                     className="object-contain"
@@ -222,7 +222,7 @@ export default function ServicesPage() {
                  <div className="flex flex-col items-center gap-6">
               <div className="w-12 h-12 relative flex items-center justify-center">
                 <Image
-                    src={'/vector11.png'}
+                    src={'/law-iconk.png'}
                     alt="icon"
                     fill
                     className="object-contain"
@@ -245,7 +245,7 @@ export default function ServicesPage() {
                  <div className="flex flex-col items-center gap-6">
               <div className="w-12 h-12 relative flex items-center justify-center">
                 <Image
-                    src={'/vector11.png'}
+                    src={'/law-iconk.png'}
                     alt="icon"
                     fill
                     className="object-contain"
@@ -268,7 +268,7 @@ export default function ServicesPage() {
                   <div className="flex flex-col items-center gap-6">
               <div className="w-12 h-12 relative flex items-center justify-center">
                 <Image
-                    src={'/vector11.png'}
+                    src={'/law-iconk.png'}
                     alt="icon"
                     fill
                     className="object-contain"
