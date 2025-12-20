@@ -106,7 +106,7 @@ export default function AboutPage() {
                 <div className="relative w-[70px] h-[70px] flex items-center justify-center">
                   <div className="absolute inset-[8.33%] border-[3.5px] border-[#C84E26] rounded-full opacity-20" />
                   <Image
-                src={'/vector6.png'}
+                src={'/law-iconf.png'}
                 alt="Our History"
                 fill
                 className="object-cover"
@@ -135,7 +135,7 @@ export default function AboutPage() {
                 <div className="relative w-[70px] h-[70px] flex items-center justify-center">
   
                   <Image
-                src={'/vector7.png'}
+                src={'/law-icong.png'}
                 alt="Our History"
                 fill
                 className="object-cover"
