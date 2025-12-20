@@ -41,7 +41,7 @@ export function PracticeAreasSection() {
           </div>
 
           <Image
-            src="/line 2.png"
+            src="/line-2.png"
             alt="Divider"
             width={1281}
             height={1}
@@ -92,7 +92,7 @@ export function PracticeAreasSection() {
             </h2>
           </div>
 
-          <Image src="/line 45.png" alt="Divider" width={2} height={38} />
+          <Image src="/line-45.png" alt="Divider" width={2} height={38} />
         </div>
 
         <div className="flex flex-col items-center justify-center gap-[60px] w-full">
@@ -129,7 +129,7 @@ export function PracticeAreasSection() {
                   </span>
                   <div className="relative w-3.5 h-3.5">
                     <Image
-                      src="/arrow-right(orange).png"
+                      src="/arrow-right-orange.png"
                       alt="Arrow"
                       fill
   

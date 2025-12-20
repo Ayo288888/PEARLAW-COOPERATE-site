@@ -171,10 +171,10 @@ export default function TeamPage() {
                       VIEW ALL PEOPLE
                     </span>
                     <div className="relative w-6 h-6">
-                      <Image src="/arrow-right(orange).png" alt="Arrow" fill className="object-contain" />
+                      <Image src="/arrow-right-orange.png" alt="Arrow" fill className="object-contain" />
                     </div>
                   </Link>
-                  <Image src="/line 45.png" alt="Divider" width={2} height={38} />
+                  <Image src="/line-45.png" alt="Divider" width={2} height={38} />
                 </div>
               </div>
 

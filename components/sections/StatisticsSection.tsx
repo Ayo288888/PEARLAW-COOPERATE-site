@@ -32,7 +32,7 @@ export function StatisticsSection() {
                   </div>
 
                   <Image
-                    src="/line 45.png"
+                    src="/line-45.png"
                     alt="Divider"
                     width={2}
                     height={38}

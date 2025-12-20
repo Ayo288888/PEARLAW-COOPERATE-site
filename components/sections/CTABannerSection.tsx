@@ -75,7 +75,7 @@ export function CTABannerSection() {
                 </div>
               </div>
 
-              <Image src="/line 45.png" alt="Divider" width={2} height={38} />
+              <Image src="/line-45.png" alt="Divider" width={2} height={38} />
             </div>
 
             <div className="flex flex-col items-start gap-10 w-full">

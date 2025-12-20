@@ -19,7 +19,7 @@ export function BlogSection() {
             </h2>
           </div>
 
-          <Image src="/line-45.svg" alt="Divider" width={2} height={38} />
+          <Image src="/line-45.png" alt="Divider" width={2} height={38} />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[27px] w-full">

@@ -6,7 +6,7 @@ export function TestimonialSection() {
     <section className="relative flex flex-col items-start gap-2.5 p-6 lg:p-20 w-full mb-20 lg:mb-[120px] overflow-hidden">
      
       <Image
-        src="peerlaw3.jpg"
+        src="/peerlaw3.jpg"
         alt="Testimonial Background"
         fill
         className="object-cover"
@@ -26,7 +26,7 @@ export function TestimonialSection() {
                 </h2>
               </div>
 
-              <Image src="/line 45.png" alt="Divider" width={2} height={38} />
+              <Image src="/line-45.png" alt="Divider" width={2} height={38} />
             </div>
 
             <div className="flex flex-col items-center gap-10 w-full">
@@ -69,9 +69,9 @@ export function TestimonialSection() {
           </div>
 
           <div className="inline-flex items-center gap-[5px]">
-            <Image src="/line 47.png" alt="" width={37} height={8} />
-            <Image src="/line 48.png" alt="" width={21} height={8} />
-            <Image src="/line 49.png" alt="" width={11} height={8} />
+            <Image src="/line-47.png" alt="" width={37} height={8} />
+            <Image src="/line-48.png" alt="" width={21} height={8} />
+            <Image src="/line-49.png" alt="" width={11} height={8} />
           </div>
         </div>
       </div>
