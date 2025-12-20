@@ -19,7 +19,7 @@ export function Navbar() {
             <Link href="/" className="flex items-center gap-[13px] flex-shrink-0">
               <div className="relative w-[50px] h-[50px]">
                 <Image
-                  src="/logo.png"
+                  src="/peerlaw-logo.png"
                   alt={`${companyInfo.name} Logo`}
                   fill
                   className="object-cover"
