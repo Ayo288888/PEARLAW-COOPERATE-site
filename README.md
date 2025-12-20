@@ -72,21 +72,6 @@ Payload CMS comes with a built-in admin panel to manage your content.
 - `lib`: Utility functions, types, and mock data.
 - `payload.config.ts`: Main configuration file for Payload CMS.
 
-## Deployment
-
-This project is designed to be deployed on platforms that support Next.js, such as Vercel.
-
-### Vercel Deployment
-
-1.  Push your code to a Git repository (GitHub, GitLab, Bitbucket).
-2.  Import the project into Vercel.
-3.  Add the environment variables (`DATABASE_URL`, `PAYLOAD_SECRET`, `NEXT_PUBLIC_SERVER_URL`) in the Vercel project settings.
-4.  Deploy.
-
-**Note:** Ensure your PostgreSQL database is accessible from the deployment environment.
 
 ## Development Notes
-
-- **Responsive Design:** The site is built mobile-first using Tailwind CSS classes.
-- **Rich Text:** The blog uses the Lexical editor for rich text content, which is serialized to HTML/JSX on the frontend.
 - **Mock Data:** Some sections of the site currently use mock data located in `lib/mock-data.ts`. This allows for rapid UI development and can be progressively replaced with CMS data as needed.
